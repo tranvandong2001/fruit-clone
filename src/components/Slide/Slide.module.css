@@ -1,0 +1,18 @@
+.imageWrap img {
+    width: 100%;
+    height: 80vh;
+    z-index: 100;
+}
+/* mobile & tablet */
+@media screen and (max-width: 1023px) {
+}
+/* tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+}
+/* Mobile */
+@media screen and (max-width: 739px) {
+    .imageWrap img {
+        width: 100%;
+        height: 30vh;
+    }
+}

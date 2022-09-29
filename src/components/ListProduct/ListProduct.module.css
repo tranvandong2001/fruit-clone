@@ -1,0 +1,22 @@
+.listProduct {
+    width: 1120px;
+    margin: 30px auto 50px;
+}
+.listProductWrap {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--gray);
+}
+/* mobile & tablet */
+@media screen and (max-width: 1023px) {
+}
+/* tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+}
+/* Mobile */
+@media screen and (max-width: 739px) {
+    .listProduct {
+        width: 100%;
+        padding: 0 10px;
+    }
+}

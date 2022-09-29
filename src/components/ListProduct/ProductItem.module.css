@@ -1,0 +1,133 @@
+.productItem {
+    margin-top: 50px;
+    position: relative;
+}
+.productItems {
+    padding: 0 4px;
+}
+.productItemWrap {
+    height: 425px;
+    width: 268px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+.productItemWrap:hover {
+    border: 1px solid var(--yellow);
+}
+.productItems:hover .buyFruit {
+    display: flex;
+    bottom: 0px;
+}
+.productItemWrap img {
+    width: 100%;
+    height: 250px;
+}
+.options {
+    padding: 0 20px;
+}
+.nameFruit p {
+    height: 30px;
+    margin-top: 10px;
+}
+.nameFruit p:hover {
+    color: var(--primary);
+}
+.priceFruit {
+    cursor: default;
+    margin: 30px 0;
+}
+.pricePrimary {
+    color: var(--red);
+    font-weight: 500;
+}
+.discount {
+    font-size: 12px;
+    margin: 0 2px;
+    color: var(--gray);
+    text-decoration: line-through;
+}
+.buyFruit {
+    position: absolute;
+    bottom: -30px;
+    /* margin: 30px 0; */
+    width: 100%;
+    display: none;
+}
+.buyFruit button {
+    width: 134px;
+    padding: 6px 12px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease-in;
+}
+.buyFruit button:first-child {
+    background-color: var(--yellow);
+}
+.buyFruit button:first-child:hover {
+    background-color: #3d464d;
+    color: white;
+}
+.buyFruit button:last-child {
+    color: white;
+    background-color: var(--green);
+}
+.buyFruit button:last-child:hover {
+    filter: brightness(0.8);
+}
+
+.alertAddCart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    z-index: 100;
+    transition: all 1s ease-in-out;
+    animation: alertCart 1s linear;
+    display: block;
+}
+@keyframes alertCart {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 300px;
+    }
+}
+
+/* mobile & tablet */
+@media screen and (max-width: 1023px) {
+}
+/* tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+}
+/* Mobile */
+@media screen and (max-width: 739px) {
+    .productItemWrap {
+        width: 168px;
+        height: 413px;
+    }
+    .productItemWrap img {
+        height: 140px;
+    }
+    .productItem {
+        width: 50%;
+    }
+    .buyFruit {
+        display: flex;
+        bottom: 16px !important;
+        left: 19px !important;
+        flex-direction: column;
+    }
+    .buyFruit button:first-child {
+        margin-bottom: 10px;
+    }
+    .options {
+        padding: 0;
+    }
+}
